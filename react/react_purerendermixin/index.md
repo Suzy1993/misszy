@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## React pureRenderMixin
+
 ### 1 原理
 PureRenderMixin的原理是重写了shouldComponentUpdate，在shouldComponentUpdate内比较this.props、this.state和nexProps、nextState，当两者相等时返回false，这样组件就不会重新渲染生成，再进行虚拟DOM的diff比较。
 

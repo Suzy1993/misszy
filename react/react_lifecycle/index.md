@@ -1,6 +1,8 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
-### 1 React生命周期
+## React生命周期
+
+### 1 React生命周期流程图
 ![image](images/1.png)
 
 ### 2 组件在发生不同变化时会执行哪些生命周期方法？

@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## Redux 核心概念
+
 ### 1 Immutable State
 Redux没有规定用什么方式来保存State，可能是Javascript对象，或是Immutable.js的数据结构。但是有一点，最好确保State中每个节点都是Immutable的，这样将确保在判断数据是否变化时，只要简单地进行引用比较即可，从而避免 Deep Equal 的遍历过程。
 为了确保这一点，在reducer中更新State成员，需要遵循以下的方式，遵循这样的方式，无需Immutable.js也可以让State是Immutable的。

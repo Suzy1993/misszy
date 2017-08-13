@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## React 思维导图
+
 ### Virtual DOM
 ![image](images/1.png)
 

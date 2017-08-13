@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## React 高阶组件
+
 ### 参考网址
 [http://www.css88.com/react/docs/higher-order-components.html](http://www.css88.com/react/docs/higher-order-components.html)  
 [https://zhuanlan.zhihu.com/p/24776678?group_id=802649040843051008](https://zhuanlan.zhihu.com/p/24776678?group_id=802649040843051008)  

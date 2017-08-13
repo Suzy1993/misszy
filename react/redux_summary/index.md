@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## Redux 综述
+
 ### 1 Redux介绍
 Redux是JavaScript状态容器，提供可预测化的状态管理。
 #### 1.1 Redux的要点

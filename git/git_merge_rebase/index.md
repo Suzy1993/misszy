@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
- 
+
+## git merge VS git rebase
+
 git merge和git rebase都是用来合并分支的。
 
 ### 1 实例

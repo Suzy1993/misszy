@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## git checkout VS git reset VS git revert
+
 ### 1 git reset
 * 当git reset后没有文件名时，就是对commit的撤销。
 * git reset撤销的commit，在下次git执行垃圾回收时，会被删除。

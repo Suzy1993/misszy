@@ -1,3 +1,7 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
+## git merge --no-ff
+
 ### 1 Fast forward模式
 当条件允许时，Git直接把HEAD指针指向合并分支的头，完成合并，但这种模式下，删除分支后，会丢掉分支信息，因为在这个过程中没有创建commit。
 
@@ -18,3 +22,5 @@
 ![image](images/1.png)
 
 ![image](images/2.png)
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

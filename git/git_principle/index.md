@@ -1,5 +1,7 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
+## git 原理
+
 ### 1 git的三个工作目录
 * 工作区：.git所在的目录下，coding的区域
 * 暂存区：一般存放在.git目录下的index文件中
