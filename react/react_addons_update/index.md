@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 参考网址
 [https://facebook.github.io/react/docs/update.html](https://facebook.github.io/react/docs/update.html)
 
@@ -68,3 +70,5 @@ const obj = {a: 5, b: 3};
 const newObj = update(obj, {b: {$apply: function(x) {return x * 2;}}}); // => {a: 5, b: 6}
 const newObj2 = update(obj, {b: {$set: obj.b * 2}}); // 等价，但对于深嵌套的集合来说是冗长的
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 参考网址：
 [https://zhuanlan.zhihu.com/p/21648398?refer=turborender](https://zhuanlan.zhihu.com/p/21648398?refer=turborender)
 [https://segmentfault.com/a/1190000010205508](https://segmentfault.com/a/1190000010205508)
@@ -209,3 +211,6 @@ const reducer = combineReducers({
 
 #### 2.2.3 高阶reducer的好处
 只用提供一个reducer函数，但却可以复用这部分的逻辑。只要dispatch的这个action明确指定需要改变哪一部分state状态即可。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+

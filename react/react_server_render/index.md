@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 参考网址
 [http://www.qingpingshan.com/jb/javascript/187275.html](http://www.qingpingshan.com/jb/javascript/187275.html)
 
@@ -62,3 +64,7 @@ React-router提供了一系列方法来在服务端捕获请求参数，并和re
 
 ### 8 动态加载方案
 对于大型Web应用程序来说，将所有代码打包成一个文件不是一种优雅的做法，特别是对于单页面应用，用户有时候并不想得到其余路由模块的内容，加载全部模块内容，不仅增加用户等待时间，而且会增加服务器负荷。webpack提供一个功能可以拆分模块，每一个模块称为chunk，这个功能叫Code Splitting。可以在代码库中定义分割点，调用require.ensure，实现按需加载，而对于服务端渲染，require.ensure是不存在的，因此需要判断运行环境，提供钩子函数。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
+

@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 参考网址
 [http://www.css88.com/react/docs/higher-order-components.html](http://www.css88.com/react/docs/higher-order-components.html)  
 [https://zhuanlan.zhihu.com/p/24776678?group_id=802649040843051008](https://zhuanlan.zhihu.com/p/24776678?group_id=802649040843051008)  
@@ -370,5 +372,7 @@ function HOCFactoryFactory(...params) {
 HOCFactoryFactory(params)(WrappedComponent)
 // 或
 @HOCFatoryFactory(params)
-```
 class WrappedComponent extends React.Component{}
+```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

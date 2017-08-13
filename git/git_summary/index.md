@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 git底层原理
 #### 1.1 git
 git保存的不是文件差异或者变化量，而只是一系列文件快照。
@@ -235,3 +237,5 @@ git clean -d | -x | -f | -n
 [http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html]()  
 [http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000]()  
 [https://stackoverflow.com/questions/4084921/what-does-the-git-index-contain-exactly]()  
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

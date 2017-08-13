@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 ref的字符串属性
 * 给从render返回的元素（HTML元素或React元素）分配ref属性。
 * 通过this.refs访问实例。
@@ -145,3 +147,5 @@ var inputDOM = React.findDOMNode(this.refs['myInput']);
 ### 4 总结
 * 有了ref与findDOMNode，父子组件之间不再是仅仅通过props来传递数据。
 * 无状态组件不支持ref，原因是无状态组件没有实例化的过程。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

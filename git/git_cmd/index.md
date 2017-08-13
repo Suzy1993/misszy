@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 基本命令
 #### **1.1  查看命令帮助**
 ```
@@ -199,3 +201,5 @@ git push origin :rem #删除远程分支rem
 git branch --merged #查看与当前分支合并过的分支，只要合并过的分支即使删掉也不用担心
 git branch --no-merged #查看与当前分支没有合并过的分支
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

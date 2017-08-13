@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 Redux介绍
 Redux是JavaScript状态容器，提供可预测化的状态管理。
 #### 1.1 Redux的要点
@@ -117,3 +119,5 @@ Redux默认并不包含react-redux这一React绑定库，需要单独安装。
 技术上讲，可以直接使用store.subscribe()来编写容器组件，容器组件就是使用store.subscribe()从state树中读取部分数据，并通过props来把这些数据提供给要渲染的组件。可以手工来开发容器组件，但不建议这么做，因为这样就无法使用React Redux带来的性能优化，建议使用React Redux的connect()方法来生成，这个方法做了性能优化来避免很多不必要的重复渲染。 
 使用connect()前，需要先定义mapStateToProps这个函数来指定如何把当前 store state映射到展示组件的props中。除了读取state，容器组件还能分发action。类似的方式，可以定义mapDispatchToProps()方法接收dispatch()方法并返回期望注入到展示组件的props中的回调方法。
 所有容器组件都可以访问store，所以可以手动监听它。一种方式是把它以props的形式传入到所有容器组件中，但这太麻烦了，建议的方式是使用指定的React Redux组件<Provider>来让所有容器组件都可以访问store，而不必显式地传递它，只需要在渲染根组件时使用即可。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

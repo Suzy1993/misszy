@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 Immutable State
 Redux没有规定用什么方式来保存State，可能是Javascript对象，或是Immutable.js的数据结构。但是有一点，最好确保State中每个节点都是Immutable的，这样将确保在判断数据是否变化时，只要简单地进行引用比较即可，从而避免 Deep Equal 的遍历过程。
 为了确保这一点，在reducer中更新State成员，需要遵循以下的方式，遵循这样的方式，无需Immutable.js也可以让State是Immutable的。
@@ -91,3 +93,5 @@ reselect提供了带cache功能的selector。如果Store/State和构造view的�
 * action对象只能是JavaScript Plain Object，但通过在Store上装载middleware，则可以任意定义action对象的形式，最终会有特定的middleware负责将此action对象变为JavaScript Plain Object。
 * Redux仅仅专注于应用状态的维护，reducer、dispatch/middleware是两个常用扩展点，Higher-order Store仅针对需要扩展全部Store功能时使用。
 * react-redux是Redux针对React/React-Native的Binding，connect/selector是扩展点，负责将Store中的状态添加到React Component的props中。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 selector
 mapStateToProps也称为selector，在store发生变化时都会被调用，也就是说，无论是不是selector关心的数据发生变化它都会被调用，因此如果selector计算量非常大，每次更新都重新计算可能会带来性能问题。
 * selector可以计算派生数据，允许Redux存储最小可能的状态。
@@ -130,3 +132,5 @@ export default connect(
     }
 )(VisibleTodoList);
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

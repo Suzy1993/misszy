@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 应用场景
 当不想提交当前完成了一半的代码，但却不得不修改一个紧急bug，那么使用git stash就可以将当前未提交到的代码推入到Git的栈中，此时工作区和上一次提交的内容是完全一样的，可以放心的修复bug，等修复完bug，提交后，再恢复以前一半的工作。
 
@@ -29,3 +31,5 @@ git branch -d issue-101：删除issue-101分支
 git checkout feature：切换回feature分支
 git stash pop：恢复工作
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

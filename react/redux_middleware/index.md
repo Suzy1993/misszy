@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 参考网址
 [http://cn.redux.js.org/docs/advanced/Middleware.html](http://cn.redux.js.org/docs/advanced/Middleware.html)
 [https://segmentfault.com/a/1190000004485808](https://segmentfault.com/a/1190000004485808)
@@ -228,3 +230,5 @@ var middlewareLogger = ({getState}) => next => action => {
     console.log(getState());
 }
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

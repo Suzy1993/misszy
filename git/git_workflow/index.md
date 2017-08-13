@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 常见的问题
 * 为什么不能使用SVN的工作流来使用git?
 * git的分支？团队多人如何协作？如何解决冲突？如何进行发布？
@@ -160,3 +162,5 @@ git merge issue-#001
 git push
 git branch -d issue-#001
 ```
+ 
+[<< 回到主页](http://suzy1993.github.io/misszy/)

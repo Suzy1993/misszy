@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ### 1 React生命周期
 ![image](images/1.png)
 
@@ -52,3 +54,5 @@
 * Removing event listeners
 * Stopping sockets
 * Cleaning up redux states
+ 
+[<< 回到主页](http://suzy1993.github.io/misszy/)
