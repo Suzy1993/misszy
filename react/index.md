@@ -10,7 +10,7 @@
 * [React Redux](http://suzy1993.github.io/misszy/react/react_redux)
 * [Redux 综述](http://suzy1993.github.io/misszy/react/redux_summary)
 * [Redux Middleware](http://suzy1993.github.io/misszy/react/redux_middleware)
-* [Redux 核心概念](http://suzy1993.github.io/misszy/greactit/redux_core_idea)
+* [Redux 核心概念](http://suzy1993.github.io/misszy/react/redux_core_idea)
 * [Redux reselect](http://suzy1993.github.io/misszy/react/redux_reselect)
 * [Redux 高阶reducer](http://suzy1993.github.io/misszy/react/redux_HOR)
 
