@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ## jQuery bind() & live() & delegate() & on() & off() & one()
 
 ### 1 bind()方法
@@ -196,3 +198,5 @@ eg6：添加只运行一次的事件处理程序然后移除
     </body>
 </html>
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

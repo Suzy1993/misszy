@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ## iframe的优缺点
 
 ### 1 iframe的优点
@@ -13,3 +15,5 @@
 * 很多的移动设备（PDA手机）无法完全显示框架，设备兼容性差。
 * iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。
 * 现在基本上都是用Ajax来代替iframe，iframe已渐渐退出了前端开发。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

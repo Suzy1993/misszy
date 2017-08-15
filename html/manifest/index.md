@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ## HTML5 离线存储
 
 ### 1 离线存储
@@ -55,3 +57,5 @@ CACHE MANIFEST
 * html5中引入了js操作离线缓存的方法：window.applicationCache.update()，可以手动更新缓存。
 #### 6.3 清除浏览器缓存
 * 如果用户清除了浏览器缓存（手动或用其他一些工具），都会重新下载文件。
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

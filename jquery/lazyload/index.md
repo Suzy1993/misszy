@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ## jQuery 懒加载技术
 
 ### 1 懒加载
@@ -29,3 +31,5 @@ lazyload插件提供了threshold选项，将threshold定为x，表示当可视�
 ```
 $("img").lazyload({ threshold: 200 });
 ```
+
+[<< 回到主页](http://suzy1993.github.io/misszy/)

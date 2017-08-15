@@ -1,3 +1,5 @@
+[<< 回到主页](http://suzy1993.github.io/misszy/)
+
 ## $(document).ready VS window.onload
 
 ### 1 文档加载完成的两种事件
@@ -54,3 +56,4 @@ document.getElementsByTagName("img")[0].onload = function() {
 }
 ```
 
+[<< 回到主页](http://suzy1993.github.io/misszy/)
