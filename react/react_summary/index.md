@@ -21,6 +21,7 @@ React是为了解决一个问题：构建数据随着时间不断变化的大规
 * React只负责View，但React与Web Components不冲突，完全可以用React去实现一个真正意义上的Web Component。
 * React不同的设计理念决定了React比Angular轻得多。
 * React实现的原理是virtual DOM机制，virtual DOM以及数据单向数据绑定使得React的渲染、响应非常快。virtual DOM带来的不仅仅是性能上的提升，更重要的是其背后所蕴含的思想——组件化的开发思路。组件，就是封装起来具有独立功能的UI控件。React推崇的是用组件的方式去重新思考UI的构成，将UI上每一个功能相对独立的模块定义成组件，然后将小的组件通过组合或嵌套的方式最终构成一个大的组件，完成整体UI的构建，这就意味着它是高度可重用的。
+
 #### 1.3 React的原理
 在Web开发中，总需要将变化的数据实时反应到用户界面上，这就需要对DOM进行操作。而复杂或频繁的DOM操作通常是性能瓶颈产生的原因。
 React为此引入了虚拟DOM的机制：在浏览器端用JavaScript实现一套DOM API。基于React，所有的DOM操作都通过虚拟DOM进行，每当数据变化时，React都会重新构建整个DOM树，然后将目前的整个DOM树和上次的DOM树进行对比，得到DOM树的区别，仅仅将变化的部分进行浏览器DOM更新。尽管每一次都要重新完整地构建虚拟DOM树，但因为虚拟DOM是内存数据，性能极高，而对真实DOM操作的仅仅是diff部分，因此能达到提高性能的目的。此外，React能批处理虚拟DOM的刷新，在一个事件循环内的两次数据变化会被合并，如连续的先将节点内容从x变成y，然后又从y变成x，React会认为UI不发生任何变化。总之，在保证性能的同时，开发者将不再需要关注数据的变化如何更新到实际的DOM元素，而只需要关心在任意一个数据状态下，整个界面是如何render的，每做一点界面的更新，都可以认为刷新了整个页面，至于如何进行局部更新以保证性能，则是React框架要完成的事情。
@@ -156,11 +157,11 @@ React可以渲染HTML标签或React组件类：要渲染HTML标签，只需在JS
 <div>{'First &middot; Second'}</div> {/* 显示：First &middot; Second */}
 ```
 解决方法：
-* 最简单的方法：直接用Unicode字符，但要确保文件是UTF-8编码且网页也指定为UTF-8编码。
+最简单的方法：直接用Unicode字符，但要确保文件是UTF-8编码且网页也指定为UTF-8编码。
 ```
 <div>{'First • Second'}</div>
 ```
-* 安全的方法：先找到实体的Unicode编号，然后在JSX表达式里使用。
+安全的方法：先找到实体的Unicode编号，然后在JSX表达式里使用。
 ```
 <div>{'First \ubb07 Second'}</div>
 <div>{'First' + String.fromCharCode(183) + 'Second'}</div>
