@@ -28,6 +28,7 @@ students.push({name: ‘Alice’});
 * 响应的返回结果也会被合并到对应的State字段中。每个reducer如果遇到自己不能处理的action，那么必须原样返回传入的state，或设定的初始状态（如果传入的state是undefined）。
 * 使用combineReducers的前提是，每一个被组合的小reducer仅仅和State的一部分数据相关，只负责处理State的一部分字段，而看不到State下的其他字段的内容。
 * 减少reducer的样板代码:每次写action/action creator/reducer，都会写很多相似度很高的代码，可以通过一定封装，来减少这些样板代码：
+
 ```
 function createReducer(initialState, handlers) {
     return function reducer(state = initialState, action) {
@@ -44,6 +45,7 @@ const todosreducer = createReducer([], {
 });
 ```
 * 特殊：有时需要在一个reducer之中访问另外一个reducer负责的State，也就是说，某些action需要触发跨reducers的状态改变，这需要创建更上一层的reducer（Root Reducer）来控制这个过程，因此，不能依靠combineReducers来完成这种需求，而是需要自己写Root Reducer。reduce-reducers也可以帮助完成类似的任务。
+
 ```
 var reducers = reduceReducers(
     combineReducers({
