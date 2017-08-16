@@ -72,6 +72,7 @@
               margin-right:10px;
               float:left;
           }
+      </style>
     </head>
     <body>
         <div id="container">
