@@ -32,20 +32,24 @@ git缺省的分支是master，所有修改提交到master分支上，集中式�
 
 #### 3.1.5 冲突解决
 * git拒绝push：
+
 ```
 git push origin master
 ```
 * 拉取最新版本并rebase：
+
 ```
 git pull --rebase origin master
 ```
 * 可能情况1——rebase过程中出现冲突，手动编辑文件解决冲突后暂存到暂存区后继续rebase过程，再将修改推送到中央仓库：
+
 ```
 git add <file>
 git rebase –continue
 git push origin master
 ```
 * 可能情况2——解决冲突出现问题，中止整个rebase过程，回到git pull --rebase origin master之前的状态：
+
 ```
 git rebase —abort
 ```
@@ -63,10 +67,12 @@ Bitbucket或Stash等仓库管理产品支持Pull Requests。
 
 #### 3.2.3 实例
 * 在开发新功能前创建一个新的分支Feature-4677：
+
 ```
 git checkout -b Feature-4677 master
 ```
 * 开发完毕后暂存并提交到本地仓库，再推送给中央仓库：
+
 ```
 git add <file>
 git commit –m "注释"
@@ -75,6 +81,7 @@ git push -u origin FeatureF-4677
 -u选项设置本地分支跟踪远程分支，设置好跟踪的分支后，就可以直接使用git push命令，不用指定本地分支和远程分支的参数。
 * 在Bitbucket或Stash等仓库管理产品中发起Pull Request请求合并修改到master，Code review的过程中可以迭代add、commit、push的流程，直到Pull Request被接受
 * 合并修改到master
+
 ```
 git checkout master
 git pull
@@ -105,25 +112,30 @@ Gitflow工作流使用2个分支来记录项目的历史：master分支存储正
 
 #### 3.3.6 实例
 * 创建develop分支，并推送到中央仓库上：
+
 ```
 git branch develop
 git push -u origin develop
 ```
 * clone中央仓库，从develop分支拉出一个跟踪分支：
+
 ```
 git clone <中央仓库地址>
 git checkout -b develop origin/develop
 ```
 * 从develop分支拉出一个新的功能分支：
+
 ```
 git checkout -b Feature-4766 develop
 ```
 * 新功能开发完毕后暂存并提交到本地仓库：
+
 ```
 git add <file>
 git commit –m "注释"
 ```
 * 合并功能分支的修改到develop分支，删除功能分支：
+
 ```
 git pull origin develop
 git checkout develop
@@ -132,10 +144,12 @@ git push
 git branch -d Feature-4766
 ```
 * 从develop分支拉出一个发布分支：
+
 ```
 git checkout -b release-0.1 develop
 ```
 * 合并发布分支的修改到master分支和develop分支上，删除发布分支：
+
 ```
 git checkout master
 git merge release-0.1
@@ -146,15 +160,18 @@ git push
 git branch -d release-0.1
 ```
 * 只要有合并到master分支，就为master打好Tag以方便跟踪：
+
 ```
 git tag -a 0.1 -m "release-0.1" master
 git push --tags
 ```
 * 若发现bug，则从master分支拉出维护分支：
+
 ```
 git checkout -b issue-#001 master
 ```
 * 修复bug后，合并维护分支的修改到master分支和develop分支上，删除维护分支：
+
 ```
 git checkout master
 git merge issue-#001
