@@ -23,9 +23,9 @@ ppi = √(X^2 + Y^2) / Z
 4）iphone6的像素分辨率没有改变，但iphone6 plus的像素分辨率改变了，一个点差不多对应2.46个像素，但不是应该做一个@2.46x的图片，而是应该做一个@3x的图片，然后再缩放到@2.46x上。所以当要添加一个30pt\*30pt的图片，只要告诉美工做一个大小为90px\*90px的image@3x.png图片。
 
 4、iphone的尺寸规格
-1）@1x，163ppi（iphone3gs）
-2）@2x，326ppi（iphone4、4s、5、5s、6）
-3）@3x，401ppi（iphone6+）
+1）@1x，163ppi（iphone3gs）  
+2）@2x，326ppi（iphone4、4s、5、5s、6）  
+3）@3x，401ppi（iphone6+）  
 <table>
   <tr><th>设备iPhone</th><th>宽Width</th><th>高Height</th><th>对角线Diagonal</th><th>逻辑分辨率(point)</th><th>Scale Factor</th><th>设备分辨率(pixel)</th><th>PPI</th></tr>
   <tr><th>3GS</th><th>2.4 inches (62.1 mm)</th><th>4.5 inches (115.5 mm)</th><th>3.5-inch</th><th>320x480</th><th>@1x</th><th>320x480</th><th>163</th></tr>
