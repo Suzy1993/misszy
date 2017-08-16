@@ -11,16 +11,16 @@
   <tr><td>inline-block</td><td>默认宽度为内容宽度，可以设置宽高，同行显示</td></tr>
   <tr><td>list-item</td><td>像块类型元素一样显示，并添加样式列表标记</td></tr>
   <tr><td>inherit</td><td>规定应该从父元素继承 display 属性的值</td></tr>
-  <tr><td>table</td><td>此元素会作为块级表格显示(类似<table>)，表格前后有换行符</td></tr>
+  <tr><td>table</td><td>此元素会作为块级表格显示(类似table)，表格前后有换行符</td></tr>
   <tr><td>inline-table</td><td></td></tr>
-  <tr><td>table-row-group</td><td>此元素会作为内联表格显示(类似<table>)，表格前后无换行符</td></tr>
-  <tr><td>table-header-group</td><td>此元素会作为一个或多个行的分组显示(类似<thead>)</td></tr>
-  <tr><td>table-footer-group</td><td>此元素会作为一个或多个行的分组显示(类似<tfoot>)</td></tr>
-  <tr><td>table-row</td><td>此元素会作为一个表格行显示(类似<tr>)</td></tr>
-  <tr><td>table-column-group</td><td>此元素会作为一个或多个列的分组显示(类似<colgroup>)</td></tr>
-  <tr><td>table-column</td><td>此元素会作为一个单元格列显示(类似<col>)</td></tr>
-  <tr><td>table-cell</td><td>此元素会作为一个表格单元格显示(类似<td> 和<th>)</td></tr>
-  <tr><td>table-caption</td><td>此元素会作为一个表格标题显示(类似<caption>)</td></tr>
+  <tr><td>table-row-group</td><td>此元素会作为内联表格显示(类似table)，表格前后无换行符</td></tr>
+  <tr><td>table-header-group</td><td>此元素会作为一个或多个行的分组显示(类似thead)</td></tr>
+  <tr><td>table-footer-group</td><td>此元素会作为一个或多个行的分组显示(类似tfoot)</td></tr>
+  <tr><td>table-row</td><td>此元素会作为一个表格行显示(类似tr)</td></tr>
+  <tr><td>table-column-group</td><td>此元素会作为一个或多个列的分组显示(类似colgroup)</td></tr>
+  <tr><td>table-column</td><td>此元素会作为一个单元格列显示(类似col)</td></tr>
+  <tr><td>table-cell</td><td>此元素会作为一个表格单元格显示(类似td和th)</td></tr>
+  <tr><td>table-caption</td><td>此元素会作为一个表格标题显示(类似caption)</td></tr>
 </table>
 
 ### 2 display: block & display: inline & display: inline-block
