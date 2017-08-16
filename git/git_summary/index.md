@@ -87,7 +87,7 @@ git checkout dev
 ```
 ![image](images/12.png)
 
-问题：本地有修改但未提交的文件，可否切换分支？
+问题：本地有修改但未提交的文件，可否切换分支？  
 解答：不一定，若两个分支都修改了同一个文件，而当前分支对该文件的修改未提交，则会出现冲突，需要先处理冲突。
 
 #### 2.1.4.2 checkout commit
@@ -96,7 +96,7 @@ git checkout master~3
 ```
 ![image](images/13.png)
 
-问题：执行git checkout master~3后，HEAD不是先指向分支名，然后再指向commit，而是直接指向commit，若此时在此commit基础上做了修改再提交，新得到的commit将没有任何一个指针指向它，以后没法追踪
+问题：执行git checkout master~3后，HEAD不是先指向分支名，然后再指向commit，而是直接指向commit，若此时在此commit基础上做了修改再提交，新得到的commit将没有任何一个指针指向它，以后没法追踪。  
 解决方法：在git checkout master~3之后新建一个分支再做修改和提交。
 
 #### 2.1.4.3 checkout file
@@ -142,7 +142,7 @@ config remote-tracking branches
 git fetch [options]
 git merge/rebase FETCH_HEAD
 ```
-问题：git fetch origin master:master与git fetch origin master有什么区别？
+问题：git fetch origin master:master与git fetch origin master有什么区别？  
 解答：git fetch origin master只会更新远程master而不会更新本地master，git fetch origin master:master才会更新本地master。
 
 #### 2.3 git合作
