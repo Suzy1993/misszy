@@ -11,7 +11,7 @@ function getId() {
     }
 }
 ```
-以上代码创建了一个作为div事件处理程序的闭包，而这个闭包又创建了一个循环引用。由于匿名函数保存了一个对getId()的活动对象的引用，因此会导致无法减少div的引用数。只要匿名函数存在，div的引用次数至少为1，它所占用的内存永远不会被回收。
+以上代码创建了一个作为div事件处理程序的闭包，而这个闭包又创建了一个循环引用。由于匿名函数保存了一个对getId()的活动对象的引用，因此会导致无法减少div的引用数。只要匿名函数存在，div的引用次数至少为1，它所占用的内存永远不会被回收。  
 解决方法：
 ```
 function getId() {
@@ -32,7 +32,8 @@ var btn = document.getElementById("btn");
 btn.onclick = function() {
     ...
 }
-解决方法：
+```
+解决方法：  
 1-1）手动移除元素绑定的事件
 ```
 var btn = document.getElementById("btn");
@@ -75,7 +76,7 @@ delete a.p; //b.x仍为1
 var s = "Hello";
 alert(s.length);
 ```
-解决方法：
+解决方法：  
 对基本类型变量做转换，通过new方法将其转换为对应的引用类型后再访问属性。
 ```
 var s = "Hello";
