@@ -5,6 +5,7 @@
 ### 1 ref的字符串属性
 * 给从render返回的元素（HTML元素或React元素）分配ref属性。
 * 通过this.refs访问实例。
+
 ```
 var MyComponent = React.createClass({
     handleClick: function() {
@@ -48,6 +49,7 @@ ReactDOM.render(
 * 说明：<input ref={ node => { input = node; } } />可简写为<input ref={ node => input = node } />。
 * 注意：新版本的React已经不推荐使用ref的字符串属性，而推荐使用ref回调属性。
 * 问题：ref属性不能被用于一个函数式组件上。
+
 ```
 function MyInput() {
     return <input />;
@@ -73,6 +75,7 @@ ReactDOM.render(
 * 原因：函数式组件没有实例。
 * 解决：将函数式组件改为类组件。
 * 问题：将函数式组件改为类组件后，虽然能获取到实例，但获取不到DOM。
+
 ```
 class MyInput extends React.Component {
     render() {
@@ -99,6 +102,7 @@ ReactDOM.render(
 ```
 * 原因：ref添加到Component上获取的是Component实例而不是DOM，添加到原生HTML上获取的才是DOM。
 * 解决：为获得Component实例对应的DOM，需要使用 ReactDOM.findDOMNode()方法。
+
 ```
 class MyInput extends React.Component {
     render() {
