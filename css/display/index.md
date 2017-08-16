@@ -12,8 +12,8 @@
   <tr><td>list-item</td><td>像块类型元素一样显示，并添加样式列表标记</td></tr>
   <tr><td>inherit</td><td>规定应该从父元素继承 display 属性的值</td></tr>
   <tr><td>table</td><td>此元素会作为块级表格显示(类似table)，表格前后有换行符</td></tr>
-  <tr><td>inline-table</td><td></td></tr>
-  <tr><td>table-row-group</td><td>此元素会作为内联表格显示(类似table)，表格前后无换行符</td></tr>
+  <tr><td>inline-table</td><td>此元素会作为内联表格显示(类似table)，表格前后无换行符</td></tr>
+  <tr><td>table-row-group</td><td>此元素会作为一个或多个行的分组显示(类似tbody)</td></tr>
   <tr><td>table-header-group</td><td>此元素会作为一个或多个行的分组显示(类似thead)</td></tr>
   <tr><td>table-footer-group</td><td>此元素会作为一个或多个行的分组显示(类似tfoot)</td></tr>
   <tr><td>table-row</td><td>此元素会作为一个表格行显示(类似tr)</td></tr>
