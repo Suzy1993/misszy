@@ -3,7 +3,7 @@
 ## CSS3 新特性——animation
 
 ### 1 创建动画
-@keyframes规则——指定一个CSS样式，动画将逐步更改样式。可以改变任意多的样式任意多的次数。
+@keyframes规则——指定一个CSS样式，动画将逐步更改样式。可以改变任意多的样式任意多的次数。  
 用百分比或用关键词"from" 和 "to"来规定变化发生的时间。"from" 和 "to"分别等同于 %和100%，0%是动画的开始，100%是动画的完成。
 ```
 @keyframes myAnimation{
@@ -17,8 +17,8 @@
 注意 -webkit-, -ms- 或 -moz- 前缀。
 
 ### 2 动画绑定到选择器
-animation属性——所有动画属性的简写属性，除了animation-play-state属性。
-指定至少两个子属性：动画名称animation-name、动画时长animation-duration
+animation属性——所有动画属性的简写属性，除了animation-play-state属性。  
+指定至少两个子属性：动画名称animation-name、动画时长animation-duration。
 ```
 div{
     animation:myAnimation 20s;
