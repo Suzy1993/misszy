@@ -30,7 +30,7 @@ var $div = $('<div>Hello World!</div>');
 var div = document.getElementById("div1");
 var node = div.cloneNode(true);
 ```
-注意：true表示克隆整个节点，包括所有子节点；false表示该节点，不克隆子节点。
+注意：true表示克隆整个节点，包括所有子节点；false表示该节点，不克隆子节点。  
 2）jQuery复制节点
 ```
 var node = $('#div1).clone(true);
