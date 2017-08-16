@@ -3,7 +3,7 @@
 ## CSS3 新特性——transform
 
 ### 1 CSS3 transform属性
-应用于2D或3D转换，允许对元素进行倾斜、移动、缩放或旋转。
+应用于2D或3D转换，允许对元素进行倾斜、移动、缩放或旋转。  
 2D转换元素能够改变元素x和y轴，3D转换元素还能改变其Z轴。
 <table>
   <tr><th>值</th><th>描述</th></tr>
@@ -29,12 +29,12 @@
 </table>
 
 ### 2 css3 transform-origin属性
-元素转换的中心点默认为元素中心点的位置，使用transform-origin属性可以改变转换中心点的位置。
-2D转换元素能够改变转换中心点的 x 和 y 轴位置，3D转换元素还能改变转换中心点的Z 轴位置。
-必须与transform属性一同使用。
-语法：transform-origin : x-axis y-axis z-axis
-默认：transform-origin : 50% 50% 0
-x-axis和y-axis可能的值：left | center | right | 数值(px) | 百分比(%)
+元素转换的中心点默认为元素中心点的位置，使用transform-origin属性可以改变转换中心点的位置。  
+2D转换元素能够改变转换中心点的 x 和 y 轴位置，3D转换元素还能改变转换中心点的Z 轴位置。 
+必须与transform属性一同使用。  
+语法：transform-origin : x-axis y-axis z-axis  
+默认：transform-origin : 50% 50% 0  
+x-axis和y-axis可能的值：left | center | right | 数值(px) | 百分比(%)  
 z-axis可能的值：数值(px)
 
 ### 3 倾斜
