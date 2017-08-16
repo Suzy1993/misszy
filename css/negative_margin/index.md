@@ -3,8 +3,8 @@
 ## CSS 负margin
 
 ### 1 等高布局
-1）把列的padding-bottom设为一个足够大的值
-2）把列的margin-bottom设为一个与padding-bottom的正值相抵消的负值
+1）把列的padding-bottom设为一个足够大的值  
+2）把列的margin-bottom设为一个与padding-bottom的正值相抵消的负值  
 3）父容器设置溢出隐藏
 ```
 <!DOCTYPE html>
@@ -129,7 +129,7 @@
         <div class="right">Right</div>
     </body>
 </html>
-``
+```
 
 ### 4 水平垂直居中
 使用绝对定位将div定位到body的中心，使用负margin(div宽高的一半)，将div的中心拉回到body的中心，实现水平垂直居中的效果。
