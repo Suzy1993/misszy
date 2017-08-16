@@ -38,7 +38,7 @@ var node = $('#div1).clone(true);
 注意：复制节点要避免id重复。
 
 ### 4 插入节点
-1）原生JS插入节点
+1）原生JS插入节点  
 1-1）原生JS在末尾插入新的子节点
 ```
 parentNode.appendChild(newNode);
@@ -48,7 +48,8 @@ parentNode.appendChild(newNode);
 parentNode.insertBefore(newNode, targetNode);
 ```
 注意：原生JS没有insertAfter()方法。
-2）jQuery插入节点
+
+2）jQuery插入节点  
 2-1）在匹配元素子节点末尾插入节点
 ```
 $('#div1).append("<div>Hello World!</div>");
@@ -97,14 +98,14 @@ $('#divl').remove();
 ```
 parentNode.repalceChild(newNode, oldNode);
 ```
-注意：oldNode必须是parentNode真实存在的一个子节点。
+注意：oldNode必须是parentNode真实存在的一个子节点。  
 2）jQuery替换节点
 ```
 $('#div1').replaceWith('<div>Hello World!</div>');
 ```
 
 ### 7 设置/获取属性
-1）原生JS设置/获取属性
+1）原生JS设置/获取属性   
 1-1）设置属性
 ```
 node.setAttribute("background", "red");
@@ -115,7 +116,8 @@ checkboxEl.checked = true;
 imgEl.getAttribute("background");
 checkboxEl.checked;
 ```
-2）jQuery设置/获取属性
+
+2）jQuery设置/获取属性  
 2-1）设置属性
 ```
 $("#div1").attr({"background": "red"});
