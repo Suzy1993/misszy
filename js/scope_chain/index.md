@@ -16,12 +16,14 @@
 
 ### 3 延长作用域链
 虽然执行环境只有两种：全局执行环境和函数执行环境，但是可以有方法延长作用域链，因为有些语句可以在作用域链的前端临时增加一个变量对象，该变量对象会在代码执行后被移除。  
+
 当执行流进入下列语句时，作用域链会延长：
 #### 3.1 try-catch语句的catch块
 catch语句会创建一个新的变量对象，其中包含的是被抛出的错误对象的声明，该变量对象只在catch块内部有效，在catch块外部无法访问到。
 
 #### 3.2 with语句
-with语句会将指定的对象添加到作用域链中。  
+with语句会将指定的对象添加到作用域链中。
+
 eg1：
 ```
 function setUrl() {
@@ -32,6 +34,7 @@ function setUrl() {
 var result = setUrl();
 alert(result); // 报错：href is no defined
 ```
+
 eg2：
 ```
 function setUrl() {
@@ -44,7 +47,8 @@ function setUrl() {
 var result = setUrl();
 alert(result); // http://localhost/text.html?name=Alice
 ```
-with语句接收的是location对象，因此其变量对象中包含了location对象的所有属性和方法，location对象被添加到了作用域链的前端。  
+with语句接收的是location对象，因此其变量对象中包含了location对象的所有属性和方法，location对象被添加到了作用域链的前端。
+
 eg3：
 ```
 var obj = {href : "http://www.baidu.com"};
@@ -62,7 +66,8 @@ alert(result); // http://www.google.cn?name=Alice
 alert(href); // http://www.sina.cn
 ```
 with语句中并没有更改变量href的值，而是更改了obj对象的 href 属性。  
-也就是说，with中首先查找的是相关对象的属性，如果没有，才改变变量的值。  
+也就是说，with中首先查找的是相关对象的属性，如果没有，才改变变量的值。
+
 eg4：
 ```
 var obj = {};
