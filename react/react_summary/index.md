@@ -324,22 +324,22 @@ React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number, ...])
 ```
 React.PropTypes.arrayOf(React.PropTypes.number)
 ```
-8）声明props为指定类型的属性构成的对象
+* 声明props为指定类型的属性构成的对象
 ```
 React.PropTypes.objectOf(React.PropTypes.number)
 ```
-9）声明props为特定形状参数的对象
+* 声明props为特定形状参数的对象
 ```
 React.PropTypes.shape({
     color: React.PropTypes.string,
     fontSize: React.PropTypes.number
 })
 ```
-10）声明props为必须的某类型
+* 声明props为必须的某类型
 ```
 React.PropTypes.number.isRequired
 ```
-11）声明props为必须的任意类型
+* 声明props为必须的任意类型
 ```
 React.PropTypes.any.isRequired
 ```
