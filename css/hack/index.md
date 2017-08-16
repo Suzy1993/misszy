@@ -10,7 +10,7 @@ CSS hack是对付IE的利器。
 ### 2 常用的CSS hack的三种方式
 #### 2.1 CSS内部hack（最常用）
 <table>
-  <tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+  <tr><th></th><th>IE6</th><th>IE7</th><th>IE8</th><th>IE9</th><th>IE10</th><th>现代浏览器</th></tr>
   <tr><td>*</td><td>YES</td><td>YES</td><td></td><td></td><td></td><td></td></tr>
   <tr><td>+</td><td></td><td>YES</td><td></td><td></td><td></td><td></td></tr>
   <tr><td>-</td><td>YES</td><td></td><td></td><td></td><td></td><td></td></tr>
@@ -32,7 +32,7 @@ div {
 #### 2.2 选择器hack
 选择器hack主要是针对IE浏览器。
 <table>
-  <tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+  <tr><th></th><th>IE6</th><th>IE7</th><th>IE8</th><th>IE9</th><th>IE10</th><th>现代浏览器</th></tr>
   <tr><td>*</td><td>YES</td><td></td><td></td><td></td><td></td><td></td></tr>
   <tr><td>+</td><td></td><td>YES</td><td></td><td></td><td></td><td></td></tr>
   <tr><td>-</td><td></td><td></td><td></td><td>YES</td><td></td><td></td></tr>
