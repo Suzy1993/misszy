@@ -30,7 +30,7 @@ overflow:hidden;
 -webkit-box-orient:vertical;
 -webkit-line-clamp:*;
 ```
--webkit-line-clamp用来限制在一个块元素显示文本的行数，需要结合WebKit属性display: -webkit-box和-webkit-box-orient属性。
+-webkit-line-clamp用来限制在一个块元素显示文本的行数，需要结合WebKit属性display: -webkit-box和-webkit-box-orient属性。  
 eg：
 ```
 <!DOCTYPE html>
