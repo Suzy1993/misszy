@@ -2,9 +2,9 @@
 
 ## JavaScript this对象
 
-与别的语言不同，JavaScript的this总是指向一个对象，而具体指向哪个对象是在运行时基于函数的执行环境动态绑定的，而非函数被声明时的环境。
-this是执行上下文的一个属性，其值在进入上下文时确定，且在上下文运行期间永久不变。
-this 是动态绑定的，即在运行期绑定。
+与别的语言不同，JavaScript的this总是指向一个对象，而具体指向哪个对象是在运行时基于函数的执行环境动态绑定的，而非函数被声明时的环境。  
+this是执行上下文的一个属性，其值在进入上下文时确定，且在上下文运行期间永久不变。  
+this 是动态绑定的，即在运行期绑定。  
 this可以是全局对象，当前对象或任意对象，取决于函数的调用方式。函数的调用方式有以下几种：作为普通函数调用，作为对象方法调用，作为构造函数调用，使用call()和apply()调用。
 
 ### 1 函数的调用方式
@@ -50,8 +50,8 @@ alert(lastname);//David
 alert(person.firstname);//Alice
 alert(person.lastname);//Bruce
 ```
-问题：在函数内部定义的函数，this也可能会指向全局，而希望的是内部函数的this绑定到外部函数对应的对象上。
-原因：内部函数永远不可能直接访问外部函数中的this变量。
+问题：在函数内部定义的函数，this也可能会指向全局，而希望的是内部函数的this绑定到外部函数对应的对象上。  
+原因：内部函数永远不可能直接访问外部函数中的this变量。  
 解决：在外部函数体中，要进入内部函数时，将this保存到一个变量中，再运用该变量。
 ```
 var firstname = "A";
@@ -100,7 +100,7 @@ alert(person.lastname);//BruceDavid
 this被绑定到了当前对象，即person对象。
 
 #### 1.3 作为构造函数调用
-JavaScript中没有类，但可以从构造器中创建对象，同时也提供了new运算符，使得构造器看起来更像一个类。
+JavaScript中没有类，但可以从构造器中创建对象，同时也提供了new运算符，使得构造器看起来更像一个类。  
 利用构造函数创建新对象时，可以将this来指向新创建的对象，避免函数中的this指向全局。
 ```
 var name = "Alice";
@@ -111,7 +111,7 @@ var person = new Person("Bruce");
 alert(name);//Alice
 alert(person.name);//Bruce
 ```
-利用构造函数创建新对象person，this指向了person。
+利用构造函数创建新对象person，this指向了person。 
 用new调用构造器时。还要注意一个问题，若构造器显式返回了一个object类型的对象，构造器返回的结果将是这个对象，而不是this。
 ```
 function Person() {
@@ -163,8 +163,9 @@ alert(person.getName()); // Alice
 var getName = person.getName;
 alert(getName()); // undefined
 ```
-当调用person.getName()时，getName()方法是作为person对象的属性被调用的，因此this指向person对象；
+当调用person.getName()时，getName()方法是作为person对象的属性被调用的，因此this指向person对象；  
 当用另一个变量getName来引用person.getName，并调用getName()时，是作为普通函数被调用，因此this指向全局window。
+
 eg2：
 ```
 <div id="div">正确的方式</div>
@@ -180,8 +181,8 @@ eg2：
     alert(getId('div').innerText); // 抛出异常
 </script>
 ```
-问题：第一段调用正常，但第二段调用会抛出异常。
-原因：许多引擎的document.getElementById()方法的内部实现中需要用到this，this本来期望指向的是document，当第一段代码在getElementById()方法作为document对象的属性被调用时，方法内部的this确实是指向document的，而第二段代码中，用getId来引用document.getElementById之后，再调用getId，此时就成了普通函数调用，函数内部的this指向了window，而不是原来的document。
+问题：第一段调用正常，但第二段调用会抛出异常。  
+原因：许多引擎的document.getElementById()方法的内部实现中需要用到this，this本来期望指向的是document，当第一段代码在getElementById()方法作为document对象的属性被调用时，方法内部的this确实是指向document的，而第二段代码中，用getId来引用document.getElementById之后，再调用getId，此时就成了普通函数调用，函数内部的this指向了window，而不是原来的document。  
 解决：利用apply把document当作this传入getId函数，修正this。
 ```
  <div id="div">修正的方式</div>
