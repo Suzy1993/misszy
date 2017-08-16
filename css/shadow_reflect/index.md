@@ -50,11 +50,11 @@ box-shadow: 10px 10px 10px red;
 
 #### 3.3 mask-box-image
 定义遮罩图像，该图像将覆盖投影区域，默认为无遮罩。
-* <url>：使用绝对或相对地址指定遮罩图像。
-* <linear-gradient>：使用线性渐变创建遮罩图像。
-* <radial-gradient>：使用径向(放射性)渐变创建遮罩图像。
-* <repeating-linear-gradient>：使用重复的线性渐变创建背遮罩像。
-* <repeating-radial-gradient>：使用重复的径向(放射性)渐变创建遮罩图像。
+* url：使用绝对或相对地址指定遮罩图像。
+* linear-gradient：使用线性渐变创建遮罩图像。
+* radial-gradient：使用径向(放射性)渐变创建遮罩图像。
+* repeating-linear-gradient：使用重复的线性渐变创建背遮罩像。
+* repeating-radial-gradient：使用重复的径向(放射性)渐变创建遮罩图像。
 eg：
 ```
 width:100px;
