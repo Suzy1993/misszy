@@ -28,6 +28,7 @@ linear-gradient([[<angle> | to <side-or-corner>] ,]? <color-stop>[, <color-stop>
 * to right top：设置渐变为从左上到右下。相当于：45deg。
 * to bottom left：设置渐变为从左上到右下。相当于：-135deg或225deg。
 * to bottom right：设置渐变为从左上到右下。相当于：135deg。
+
 说明：
 * 标准浏览器：0deg表示沿着元素的中心线由下向上的方向(类似于y轴)，且正角度表示顺时针旋转；  
 * -webkit-非标准浏览器，0deg表示沿着元素中心线从左向右的方向(类似于x轴)，且正角度表示逆时针旋转；  
@@ -38,6 +39,7 @@ linear-gradient([[<angle> | to <side-or-corner>] ,]? <color-stop>[, <color-stop>
 * color：指定颜色。  
 * length：用长度值指定起止色位置，不允许负值。  
 * percentage：用百分比指定起止色位置。  
+
 说明：
 * 色标没有默认值，且必须设置至少两个色标。
 * 色标由颜色和位置组成，位置可使用百分比或数值，可设置负值。
