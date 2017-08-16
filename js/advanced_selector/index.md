@@ -3,7 +3,7 @@
 ## JavaScript 高级选择器querySelector & querySelectorAll
 
 ### 1 querySelector和querySelectorAll
-querySelector和querySelectorAll根据CSS选择器规范，便捷定位文档中指定元素，主流浏览器均支持：包括IE8+、Firefox、Chrome、Safari、Opera。
+querySelector和querySelectorAll根据CSS选择器规范，便捷定位文档中指定元素，主流浏览器均支持：包括IE8+、Firefox、Chrome、Safari、Opera。  
 querySelector返回的是一个对象，querySelectorAll返回的一个集合(NodeList)。
 
 ### 2 querySelector系列方法与getElementBy系列方法的区别
@@ -22,7 +22,7 @@ var ele = document.querySelectorAll('#3d'); // 报错：'#3d' is not a valid sel
 ```
 
 #### 2.4 querySelector系列返回的是一个静态的Node List，而getElementBy系列的返回的是一个动态的Node List。
-NodeList对象本质上是一个动态的Node集合，只是规范中对querySelector系列有明确要求，规定其必须返回一个静态的NodeList对象。
+NodeList对象本质上是一个动态的Node集合，只是规范中对querySelector系列有明确要求，规定其必须返回一个静态的NodeList对象。  
 注意：querySelectorAll 返回的虽然是 NodeList ，但是实际上是元素集合，并且是静态的。
 ```
 console.log(document.querySelectorAll('div').toString()); // 输出：[object NodeList]
@@ -37,6 +37,7 @@ lis = ul.querySelectorAll("li");
 for(var i = 0; i < lis.length ; i++)
     ul.appendChild(document.createElement("li"));
 ```
+
 eg2：lis是一个动态的Node List，每次调用lis都会重新对文档进行查询，导致无限循环的问题。
 ```
 var ul = document.getElementsByTagName('ul')[0],
