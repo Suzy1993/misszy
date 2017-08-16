@@ -19,7 +19,7 @@ linear-gradient([[<angle> | to <side-or-corner>] ,]? <color-stop>[, <color-stop>
 <color-stop> = <color> [ <length> | <percentage> ]?
 ```
 #### 2.1 渐变线
-<angle>——指定渐变的方向（或角度）。
+* angle：指定渐变的方向（或角度）。
 * to left：设置渐变为从右到左。相当于：270deg。
 * to right：设置渐变从左到右。相当于：90deg。
 * to top：设置渐变从下到上。相当于：0deg。
@@ -34,10 +34,10 @@ linear-gradient([[<angle> | to <side-or-corner>] ,]? <color-stop>[, <color-stop>
 * -webkit-非标准浏览器与标准浏览器间的线性渐变的角度关系为：-webkit-浏览器 = 90deg - 标准浏览器，如-webkit-linear-gradient(90deg, red, blue) = linear-gradient(0deg, red, blue)。
 
 #### 2.2 色标
-<color-stop>——指定渐变的起止颜色。  
-<color>：指定颜色。  
-<length>：用长度值指定起止色位置，不允许负值。  
-<percentage>：用百分比指定起止色位置。  
+* color-stop———指定渐变的起止颜色。  
+* color：指定颜色。  
+* length：用长度值指定起止色位置，不允许负值。  
+* percentage：用百分比指定起止色位置。  
 说明：
 * 色标没有默认值，且必须设置至少两个色标。
 * 色标由颜色和位置组成，位置可使用百分比或数值，可设置负值。
