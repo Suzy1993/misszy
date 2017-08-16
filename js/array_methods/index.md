@@ -3,7 +3,7 @@
 ## JavaScript 数组方法
 
 ### 1 ECMAScript数组的特点
-1）ECMAScript数组的每一项可以保存任何类型的数据。
+1）ECMAScript数组的每一项可以保存任何类型的数据。  
 2）ECMAScript数组的大小是可以动态调整的。
 
 ### 2 创建数组
@@ -21,24 +21,27 @@ var arr2 = ["teacher", 3, true];
 ```
 
 ### 3 length属性
-ECMAScript数组的length属性不是只读的，通过设置这个属性可以从数组末尾移除项或向数组中添加新项。
+ECMAScript数组的length属性不是只读的，通过设置这个属性可以从数组末尾移除项或向数组中添加新项。  
 eg1：从数组末尾移除项
 ```
 var arr = ["teacher", 3, true];
 arr.length = 1;
 alert(arr[2]);//undefined
 ```
+
 eg2：如果将length设置为大于当前数组长度的值，则新增的每一项都会取得undefined值
 ```
 var arr = ["teacher", 3, true];
 arr.length = 4;
 alert(arr[3]);//undefined
 ```
+
 eg3：向数组中添加新项
 ```
 var arr = ["teacher", 3, true];
 arr[arr.length] = “doctor”;
 ```
+
 eg4：当一个值放在超出当前数组大小的位置上时，数组会重新计算其长度值，等于最后一项的索引加一。
 ```
 var arr = ["teacher", 3, true];
@@ -53,7 +56,7 @@ if (value instanceof Array) {
     ...
 }
 ```
-适用范围：一个网页或一个全局作用域
+适用范围：一个网页或一个全局作用域。  
 问题：若网页中包含多个框架，则实际上存在两个以上不同的全局执行环境，从而存在两个以上不同版本的Array构造函数。若从一个框架向另一个框架传入一个数组，那么传入的数组在与第二个框架中原生创建的数组分别具有各自不同的构造函数。
 
 #### 4.2 Array.isArray()方法
@@ -75,8 +78,8 @@ if (Array.isArray(value)) {
 为了取得每一项的值，调用的是每一项的toLocaleString()方法，而不是toString()方法。
 
 #### 5.4 join()
-使用指定的分隔符来构建字符串
-说明：alert()方法要接收字符串参数，所以它会在后台调用toString()方法。
+使用指定的分隔符来构建字符串。  
+说明：alert()方法要接收字符串参数，所以它会在后台调用toString()方法。  
 eg1：
 ```
 var friends = ["Alice","Bruce","Cindy"];
@@ -87,6 +90,7 @@ alert(friends);//Alice,Bruce,Cindy
 alert(friends.join());//Alice,Bruce,Cindy
 alert(friends.join(“|”));//Alice|Bruce|Cindy
 ```
+
 eg2：
 ```
 var person1 = {
@@ -146,7 +150,7 @@ alert(friends.length);//1
 翻转数组项的顺序
 
 #### 8.2 sort()
-按升序排列数组项
+按升序排列数组项。 
 sort()方法会调用每项的toString()方法，然后比较得到的字符串。
 ```
 var items=[0,1,3,15,18];
@@ -218,7 +222,7 @@ alert(friends3);//Bruce,Fancy,Gary,Emy,Cindy
 接收两个参数——要查找的项和可选的查找起点位置的索引，从开头开始查找，没找到则返回-1。
 
 #### 10.2 lastIndexOf()
-接收两个参数——要查找的项和可选的查找起点位置的索引，从末尾开始查找，没找到则返回-1。
+接收两个参数——要查找的项和可选的查找起点位置的索引，从末尾开始查找，没找到则返回-1。  
 在比较第一个参数与数组中的每一项时，会使用全等操作符，也就是要求查找的项必须严格相等。
 ```
 var person = {name : "Alice"};
