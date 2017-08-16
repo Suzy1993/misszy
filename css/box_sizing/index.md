@@ -10,7 +10,7 @@
 怪异盒模型，是指块元素box-sizing属性为border-box的盒模型。一般在IE浏览器中默认为是怪异盒模型，但由于其自身的特殊性，手机页面中也有使用怪异盒模型。
 
 ### 2 box-sizing：content-box | border-box
-默认值：content-box
+默认值：content-box  
 适用于：所有接受width和height的元素
 #### 2.1 content-box
 padding和border不被包含在定义的width和height之内。对象的实际宽度等于设置的width值和border、padding之和，即width + border + padding，表现为标准模式下的盒模型。box-sizing默认值为content-box，可以不写。
@@ -39,8 +39,8 @@ padding和border被包含在定义的width和height之内。对象的实际宽�
 注意：box-sizing 属性是CSS3的新特性——IE、Opera 以及 Chrome 支持 box-sizing 属性；Firefox需要加上-moz前缀；Safari需要加上-webkit前缀。
 
 #### 2.3 box-sizing: border-box的典型应用
-创建一个width为100%，border为10px的div。
-问题：不设置box-sizing的情况下，div会溢出。
+创建一个width为100%，border为10px的div。  
+问题：不设置box-sizing的情况下，div会溢出。  
 解决方法：设置box-sizing: border-box。
 ```
 #square{
