@@ -15,7 +15,7 @@
 * [CSS 响应式布局](http://suzy1993.github.io/misszy/css/responsive_layout)
 * [CSS hack](http://suzy1993.github.io/misszy/css/hack)
 * [CSS 预处理器](http://suzy1993.github.io/misszy/css/preprocessor)
-* [CSS <a>的正确顺序](http://suzy1993.github.io/misszy/css/a_order)
+* [CSS 超链接a的正确顺序](http://suzy1993.github.io/misszy/css/a_order)
 * [CSS 单位px & pt & em & rem](http://suzy1993.github.io/misszy/css/px_pt_em_rem)
 * [纯CSS 实现自适应浏览器宽度/高度的正方形](http://suzy1993.github.io/misszy/css/adaptive_square)
 * [CSS line-height属性](http://suzy1993.github.io/misszy/css/line_height)
@@ -33,4 +33,3 @@
 * [CSS3 新特性——transform](http://suzy1993.github.io/misszy/css/transform)
 
 [<< 回到主页](http://suzy1993.github.io/misszy/)
-
