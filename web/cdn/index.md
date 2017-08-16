@@ -10,7 +10,7 @@ CDN系统能实时地根据网络流量和各节点的连接，负载状况及�
 CDN用于部署静态内容：JS脚本、CSS样式表、图片、图标、Flash等，不包括HTML页面，这些静态资源文件的访问频率很高，将其缓存在CDN可以极大地提高网站的访问速度，但由于CDN是部署在网络运营商的机房，所以在一般的网站中都很少用CDN加速。
 
 ### 2 最简单的CDN实例
-1）以博客园为例，博客园有很多站点，如www.cnblogs.com, news.cnblogs.com等等，它们之间会共享某些内容（如JavaScript、CSS、image、jQuery等），这些公共资源可以放在common.cnblogs.com这样的公共站点上。
+1）以博客园为例，博客园有很多站点，如www.cnblogs.com, news.cnblogs.com等等，它们之间会共享某些内容（如JavaScript、CSS、image、jQuery等），这些公共资源可以放在common.cnblogs.com这样的公共站点上。  
 2）以京东为例，广州的用户请求某图片，只需要从广州的网络运营商机房的CDN缓存服务器获取该图片即可。
 
 ### 3 CDN用于前端性能优化
@@ -25,7 +25,7 @@ CDN用于部署静态内容：JS脚本、CSS样式表、图片、图标、Flash�
 静态资源和主页面不同域，加载静态资源的HTTP请求就不会带上主页面中的cookie等数据，减少了数据传输量，节省流量，提升上传效率。
 
 ### 4 知名的CDN服务
-1）微软的CDN服务
+1）微软的CDN服务  
 2）Google的CDN服务
 
 ### 5 使用CDN的劣势
