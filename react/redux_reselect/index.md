@@ -119,10 +119,18 @@ VisibleTodoList.propTypes = {
     toggleTodo: func,
 };
 const todoSelector = createSelector(
+    state => state.visibilityFilter,
     state => state.todos,
-    todos => {
+    (visibilityFilter, todos) => {
         console.log("The state todos has been changed!");
-        return todos.filter(todo => todo.completed);
+        switch (visibilityFilter) {
+            case 'SHOW_ALL':
+                return todos
+            case 'SHOW_COMPLETED':
+                return todos.filter(t => t.completed)
+            case 'SHOW_ACTIVE':
+                return todos.filter(t => !t.completed)
+        }
     }
 );
 const mapStateToProps = (state) => ({
