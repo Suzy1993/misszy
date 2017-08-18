@@ -7,7 +7,7 @@
 * [JavaScript this对象](http://suzy1993.github.io/misszy/js/this)
 * [JavaScript arguments对象](http://suzy1993.github.io/misszy/js/arguments)
 * [JavaScript 严格模式](http://suzy1993.github.io/misszy/js/strict_mode)
-* [JavaScript 事件冒泡 VS 事件捕获](http://suzy1993.github.io/misszy/js/bubble_capture)
+* [JavaScript 事件模型](http://suzy1993.github.io/misszy/js/event)
 * [JavaScript bind() & apply() & call()](http://suzy1993.github.io/misszy/js/bind_apply_call)
 * [JavaScript 内存泄漏](http://suzy1993.github.io/misszy/js/memory_leak)
 * [JavaScript 垃圾收集机制](http://suzy1993.github.io/misszy/js/garbage_collection)

@@ -8,7 +8,46 @@ JavaScript和HTML之间的交互是通过事件实现的。
 事件流描述的是从页面中接受事件的顺序，但IE和Netscape却提出了完全相反的事件流的概念，IE的事件流是事件冒泡流，而Netscape的事件流是事件捕获流。
 #### 1.1 事件冒泡
 事件开始时由最具体的元素（文档中嵌套层次最深的那个节点接收，然后逐级向上传播到较为不具体的节点（文档）。  
-不支持事件冒泡的事件：blur、focus、load、unload。
+不支持事件冒泡的事件：blur、focus、load、unload。  
+在一个对象上触发某类事件，如onclick事件等，在其祖先节点上也会依次触发该事件。
+```
+<body onclick="alert('body')">
+    <div onclick="alert('div')">
+        <a href="" onclick="alert('a')">事件冒泡</a>
+    </div>
+</body>
+```
+依次输出：a、div、body  
+注意：不是所有的事件都能冒泡。blur、focus、load、unload等事件不冒泡。  
+阻止事件冒泡:
+若只希望事件发生在该子元素而不是在它的祖先元素上，则需要阻止事件冒泡。  
+IE浏览器和其他浏览器阻止事件冒泡的方式不同：
+```
+<div>
+    <a href="">事件冒泡</a>
+</div>
+<script>
+    function stopBubble(e){
+        if(e && e.stopPropagation)
+            e.stopPropagation(); // 非IE浏览器
+        else
+            window.event.cancelBubble = true; // IE浏览器
+    }
+    document.getElementsByTagName("body")[0].onclick = function(e) {
+        stopBubble(e);
+        alert('body');
+    }
+    document.getElementsByTagName("div")[0].onclick = function(e) {
+        stopBubble(e);
+        alert('div');
+    }
+    document.getElementsByTagName("a")[0].onclick = function(e) {
+        stopBubble(e);
+        alert('a');
+    }
+</script>
+```
+输出：a
 
 #### 1.2 事件捕获
 不太具体的节点应该更早接收到事件，而最具体的节点应该最后接收到事件。事件捕获的用意在于事件到达预定目标之前捕获它。  
