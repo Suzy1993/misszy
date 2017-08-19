@@ -1,6 +1,6 @@
 [<< 回到主页](http://suzy1993.github.io/misszy/)
 
-## CSS3 box-sizing属性
+## CSS3 新特性——box-sizing属性
 
 ### 1 CSS盒子模型
 #### 1.1 w3c 盒子模型
