@@ -26,7 +26,7 @@
 * [CSS position & display & overflow & float & margin合并](http://suzy1993.github.io/misszy/css/property_together)
 * [CSS 等比例分割父级容器](http://suzy1993.github.io/misszy/css/ratio_layout)
 * [CSS3 Flexbox布局](http://suzy1993.github.io/misszy/css/flexbox)
-* [CSS3 box-sizing属性](http://suzy1993.github.io/misszy/css/box_sizing)
+* [CSS3 新特性——box-sizing](http://suzy1993.github.io/misszy/css/box_sizing)
 * [CSS3 新特性——gradient](http://suzy1993.github.io/misszy/css/gradient)
 * [CSS3 新特性——animation](http://suzy1993.github.io/misszy/css/animation)
 * [CSS3 新特性——multi-column layout](http://suzy1993.github.io/misszy/css/multi_column_layout)
