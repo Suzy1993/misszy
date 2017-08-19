@@ -150,7 +150,8 @@ CrossOrigin Resource Sharing跨域资源共享。
 服务器端：JSP页面中设置response.addHeader("Access-Control-Allow-Origin", "http://www.yoursite.com:8080")。  
 在请求信息中，浏览器使用 Origin 这个 HTTP 头来标识该请求来自于 http://www.yoursite.com:8080（发出跨区请求的url）。  
 在返回的响应信息中，使用 Access-Control-Allow-Origin 头来控制哪些域名的脚本可以访问该资源。  
-如果设置 Access-Control-Allow-Origin为*，则允许所有域名的脚本访问该资源。如果有多个，则只需要使用逗号分隔开即可。
+如果设置 Access-Control-Allow-Origin为\*，则允许所有域名的脚本访问该资源。如果有多个，则只需要使用逗号分隔开即可。  
+如果设置Access-Control-Allow-Credentials响应头为true，则允许在CORS中携带Cookie。
 
 #### 3.4.2 JSONP
 通过callback形式实现跨域访问。JSONP比JSON外面有多了一层callback()，也就是说，在服务器端需要先将查询结果转换成JSON格式，然后用参数callback在JSON外面再套一层，就变成了JSONP。
