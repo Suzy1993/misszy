@@ -30,10 +30,10 @@ css3 中新增了一组相对于可视区域百分比的长度单位vw、vh、vm
 }
 ```
 1）优点：简洁明了，且兼容性好。  
-2）缺点：会导致在元素上设置的max-width属性失效（max-height不收缩）。
+2）缺点：会导致在元素上设置的max-height属性失效（max-height不收缩）。
 
 ### 3 利用伪元素的margin(padding)-top 撑开容器
-max-width属性失效的原因是：max-width属性只限制于width，也就是只会对元素的content width起作用。
+max-height属性失效的原因是：max-height属性只限制于height，也就是只会对元素的content height起作用。
 解决方法是：用一个子元素撑开content部分的高度，从而使max-height属性生效。
 首先需要设置伪元素，其内容为空，margin-top设置为100%。
 但要注意，若使用垂直方向上的margin撑开父元素，仅仅设置伪元素是不够的，这涉及到margin collapse外边距合并的概念，由于容器与伪元素在垂直方向发生了外边距合并，所以撑开父元素高度并没有出现，解决方法是在父元素上触发BFC：设置overflow:hidden。

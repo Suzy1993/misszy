@@ -17,6 +17,7 @@
 * [CSS 预处理器](http://suzy1993.github.io/misszy/css/preprocessor)
 * [CSS 超链接a的正确顺序](http://suzy1993.github.io/misszy/css/a_order)
 * [CSS 单位px & pt & em & rem](http://suzy1993.github.io/misszy/css/px_pt_em_rem)
+* [CSS iOS尺寸单位pt、ppi与px](http://suzy1993.github.io/misszy/web/pt_ppi_px)
 * [纯CSS 实现自适应浏览器宽度/高度的正方形](http://suzy1993.github.io/misszy/css/adaptive_square)
 * [CSS line-height属性](http://suzy1993.github.io/misszy/css/line_height)
 * [纯CSS 绘制圆形、椭圆形、菱形、三角形](http://suzy1993.github.io/misszy/css/draw_shape)

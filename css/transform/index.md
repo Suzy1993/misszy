@@ -34,7 +34,8 @@
 必须与transform属性一同使用。  
 语法：transform-origin : x-axis y-axis z-axis  
 默认：transform-origin : 50% 50% 0  
-x-axis和y-axis可能的值：left | center | right | 数值(px) | 百分比(%)  
+x-axis可能的值：left | center | right | 数值(px) | 百分比(%)  
+y-axis可能的值：top | center | bottom | 数值(px) | 百分比(%)  
 z-axis可能的值：数值(px)
 
 ### 3 倾斜

@@ -13,7 +13,6 @@
 * [重绘与重排/回流](http://suzy1993.github.io/misszy/web/repaint_reflow)
 * [XSS & CSRF跨站攻击](http://suzy1993.github.io/misszy/web/xss_csrf)
 * [移动端开发——物理像素和逻辑像素](http://suzy1993.github.io/misszy/web/pixel)
-* [iOS尺寸单位pt、ppi与px](http://suzy1993.github.io/misszy/web/pt_ppi_px)
 * [同源策略与跨域问题](http://suzy1993.github.io/misszy/web/cross_origin)
 
 [<< 回到主页](http://suzy1993.github.io/misszy/)
