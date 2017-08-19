@@ -10,15 +10,15 @@
 #### 2.1 构造函数、原型和实例的关系
 * 构造函数有一个原型属性prototype指向一个原型对象。
 * 原型对象包含一个指向构造函数的指针constructor。
-* 实例包含一个指向原型对象的内部指针[[prototype]] 。
+* 实例包含一个指向原型对象的内部指针__propto__。
 假如让原型对象等于另一个类型的实例，则此时的原型对象包含一个指向另一个原型对象的指针，相应地，另一个原型对象中也包含着一个指向另一个构造函数的指针。假如另一个原型又是另一个类型的实例，那么上述关系依然成立，如此层层递进，就构成了实例与原型的链条，这就是所谓的原型链的基本概念。
 
 #### 2.2 简单理解
 JavaScript在创建对象时，不论是普通对象还是函数对象，都有一个叫做__proto__的内置属性，用于指向创建它的函数对象的原型对象prototype。  
 以Student类继承Person类为例（student为Student类的实例，person为Person类的实例）：  
-1）student对象有__proto__属性，它指向创建它的函数对象person的prototype。
+1）student对象有__proto__属性，它指向创建它的函数对象Person的prototype。
 ```
-student.__proto__ === person.prototype
+student.__proto__ === Person.prototype
 ```
 2）person.prototype对象也有__proto__属性，它指向创建它的函数对象Object的prototype。
 ```
