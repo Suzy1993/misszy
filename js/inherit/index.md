@@ -72,7 +72,7 @@ function Student() {
 Student.prototype = new Person("Bruce");
 Student.prototype.id = 16;
 Student.prototype.showId = function() {
-alert(this.id);
+    alert(this.id);
 }
 Student.prototype.sayHello = function() {
     alert("Hi, " + this.name);
@@ -126,6 +126,8 @@ Object.getPrototypeOf(student1) == Student.prototype
 1）引用类型的属性会被实例共享，原型实现继承时，原型会变成另外一个类型的实例，实例的属性则变成了现在的原型属性，从而被共享。
 ```
 function Person(name, age) {
+    this.name = name;
+    this.age = age;
     this.friends = ["Cindy","David"];
 }
 function Student() {
