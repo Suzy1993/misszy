@@ -1,6 +1,7 @@
 ## 目录
 
 * [React](http://suzy1993.github.io/misszy/react)
+* [ES6](http://suzy1993.github.io/misszy/es5)
 * [Git](http://suzy1993.github.io/misszy/git)
 * [Web](http://suzy1993.github.io/misszy/web)
 * [HTML](http://suzy1993.github.io/misszy/html)
