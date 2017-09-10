@@ -162,6 +162,7 @@ Object.assign({key: 'value'},
 // { key: 'value' }
 ```
 注意：Object.assign方法实行的是浅拷贝，而不是深拷贝。也就是说，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用：
+```
 var obj1 = {a: {b: 1}};
 var obj2 = Object.assign({}, obj1);
 obj1.a.b = 2;
